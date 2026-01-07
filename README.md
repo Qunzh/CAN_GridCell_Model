@@ -1,7 +1,21 @@
 # Recurrent Continuous Network Model for V1 Orientation Selectivity
 
 ## Overview
-Reproduction of Recurrent Continuous Network Model for V1 Orientation Selectivity proposed by Ben-Yishai et al.(1995) with help from Wang et al. 2025 Theoretical Neuroscience Chapter 3.5 Network Models and Information Representation. 
+Reproduction of Recurrent Continuous Network Model for V1 Orientation Selectivity proposed by Ben-Yishai et al.(1995) with help from Wang et al. 2025 Theoretical Neuroscience Chapter 3.5 Network Models and Information Representation.  
+
+```math
+\tau \dfrac{dr(\theta_i)}{dt} = -r(\theta_i) + F(I(t))  
+```
+```math
+I(t) = h(\theta_i) + R(\theta_i)
+```
+```math
+h(\theta_i) = Ac(1-\epsilon+\epsilon cos(2(\theta_i - \theta_{cue})))
+```
+```math
+R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\theta_i-\theta_{j})))r(\theta_{j})
+```
+  
   
 Biologically realistically, this model suceessfully captures the property which orientation selectivity doesn't change with the level contrast as observed in experiment.  
   
