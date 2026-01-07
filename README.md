@@ -1,5 +1,4 @@
-# Continuous Attrator Models of Grid Cells
+# Recurret Continuous Network Model
 
 ### Overview
-Reproduction of Continuous Attractor Network Models of Grid Cells based on Burak, Fiete et al.(2009)  
-Start with 1-D Ring Model which described V1 contrast invariant orientational selectivity based on recurrent continuous network proposed by Ben-Yishai et al.(1995)
+Reproduction of Recurrent Continuous Network Model proposed by Ben-Yishai et al.(1995) with help from Wang et al. 2025 Theoretical Neuroscience Chapter 3.5 Network Models and Information Representation 
