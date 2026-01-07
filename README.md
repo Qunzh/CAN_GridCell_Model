@@ -16,6 +16,7 @@ h(\theta_i) = Ac(1-\epsilon+\epsilon cos(2(\theta_i - \theta_{cue})))
 R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\theta_i-\theta_{j})))r(\theta_{j})
 ```
   
+
   
 Biologically realistically, this model suceessfully captures the property which orientation selectivity doesn't change with the level contrast as observed in experiment.  
   
