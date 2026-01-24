@@ -4,16 +4,16 @@
 Reproduction of Recurrent Continuous Network Model for V1 Orientation Selectivity proposed by Ben-Yishai et al.(1995) with help from Wang et al. 2025 Theoretical Neuroscience Chapter 3.5 Network Models and Information Representation.  
 
 ```math
-\tau \dfrac{dr(\theta_i)}{dt} = -r(\theta_i) + F(I(t)) (1)
+\tau \dfrac{dr(\theta_i)}{dt} = -r(\theta_i) + F(I(t))   (1)
 ```
 ```math
-I(t) = h(\theta_i) + R(\theta_i) (2)
+I(t) = h(\theta_i) + R(\theta_i)   (2)
 ```
 ```math
-h(\theta_i) = Ac(1-\epsilon+\epsilon cos(2(\theta_i - \theta_{cue}))) (3)
+h(\theta_i) = Ac(1-\epsilon+\epsilon cos(2(\theta_i - \theta_{cue})))   (3)
 ```
 ```math
-R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\theta_i-\theta_{j})))r(\theta_{j}) (4)
+R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\theta_i-\theta_{j})))r(\theta_{j})   (4)
 ```
 ### Explanation for the model
 The model presents how V1 neurons together construct a firing rate profile for input orientation from the thalamus.  
