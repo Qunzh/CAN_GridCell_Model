@@ -18,7 +18,7 @@ R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\th
 ### Explanation for the model
 The model presents how V1 neurons together construct a firing rate profile for input orientation from the thalamus.  
   
-First, all V1 neurons in this model are selective to a certain orientation $\theta_i$ which we assume to be evenly spaced between -90 and 90 degrees. And the firing rate of these neurons are $r(\theta_i)$. The change in firing rate of these neurons at every time step are then their new firing rate $F$ based on computed output accoding to new input (input-output relationship) $I(t)$ at this stimestep, substracting their firing rate at previous timestep (described in equation (1)). The F funtion is simply a Relu Function F(x) = max(0,x) because there's no negative firing rate in neurons.  
+First, all V1 neurons in this model are selective to a certain orientation $\theta_i$ which we assume to be evenly spaced between $\-pi/2$ and $\pi/2$ degrees. And the firing rate of these neurons are $r(\theta_i)$. The change in firing rate of these neurons at every time step are then their new firing rate $F$ based on computed output accoding to new input (input-output relationship) $I(t)$ at this stimestep, substracting their firing rate at previous timestep (described in equation (1)). The F funtion is simply a Relu Function F(x) = max(0,x) because there's no negative firing rate in neurons.  
   
 The input-output relatioship $I(t)$ is a combination of external input from thalamus $h(\theta_i)$ and recurrent input within V1 population $R(\theta_i)$.  
   
