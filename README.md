@@ -17,9 +17,13 @@ R(\theta_i) = \int^{\pi/2}_{-\pi/2} \dfrac{d\theta_{j}}{\pi} (J_0 + J_2cos(2(\th
 ```
 ### Explanation for the model
 The model presents how V1 neurons together construct a firing rate profile for input orientation from the thalamus.  
+  
 First, all V1 neurons in this model are selective to a certain orientation $\theta_i$ which we assume to be evenly spaced between -90 and 90 degrees. And the firing rate of these neurons are $r(\theta_i)$. The change in firing rate of these neurons at every time step are then their new firing rate $F$ based on computed output accoding to new input (input-output relationship) $I(t)$ at this stimestep, substracting their firing rate at previous timestep (described in equation (1)). The F funtion is simply a Relu Function F(x) = max(0,x) because there's no negative firing rate in neurons.  
+  
 The input-output relatioship $I(t)$ is a combination of external input from thalamus $h(\theta_i)$ and recurrent input within V1 population $R(\theta_i)$.  
+  
 $h(\theta_i)$ is computed based on the cosine difference between the orientation $\theta_i$ which neuron is selecctive and the orientation $\theta_{cue}$ which thalamus input to V1, modulated by firing rate amplitude of thalamus ($A$) and contrast of $\theta_{cue}$.  
+  
 $R(\theta_i)$ is computed by integrating over firing rate input from all other neurons selective to $\theta_j$ modulated by synaptic connection strength. There are two synaptic connection strength: the constant recurrent inhibitory synaptic connection strength $J_0$ and recurrent excitatory synaptic connection strength $J_2$ modulated by the cosine diffrence between target neuron $\theta_i$ and all other neurons $\theta_j$. For neurons selective to $\theta_j$s that are closed to $\theta_i$, $J_2cos(2(\theta_i-\theta_{j}))$ would be positive, and for those neurons selective to $\theta_j$s that are far away from $\theta_i$, $J_2cos(2(\theta_i-\theta_{j}))$ would be negative. The combination of these two type of recurrent connection creates a "Mexican Hat" connection strength profile that modulates firing rate input from other neurons to the target neuron. 
 
 ### Significance of Model  
