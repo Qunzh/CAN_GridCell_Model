@@ -29,7 +29,7 @@ $R(\theta_i)$ is computed by integrating over firing rate input from all other n
 ### Significance of Model  
 Biologically realistically, this model suceessfully captures the property which orientation selectivity doesn't change with the level contrast as observed in experiment.  
   
-Dyanmically, this model also demonstrates how interaction between specific recurrent excitation and recurrent inhibition could possibly leads to 3 different dynamical regimes in V1:  
+Dyanmically, this model also demonstrates how interaction between specific recurrent excitation and recurrent inhibition could possibly leads to 3 different dynamical regimes in V1:  Homogeneous State, Marginal State and Amplitude Instability State. 
 
 ## Background
 ### Structure of Visual Pathway
